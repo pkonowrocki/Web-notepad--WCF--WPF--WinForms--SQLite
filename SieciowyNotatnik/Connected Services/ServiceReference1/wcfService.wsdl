@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wcfService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63646/wcfService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63646/wcfService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63646/wcfService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwcfService_DBis_InputMessage">
+    <wsdl:part name="parameters" element="tns:DBis" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_DBis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DBisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_addNewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:addNewUser" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_addNewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addNewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_getUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserId" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_getUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_addNewText_InputMessage">
+    <wsdl:part name="parameters" element="tns:addNewText" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_addNewText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addNewTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_getTexts_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTexts" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_getTexts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTextsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_updateText_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateText" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_updateText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_userExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:userExist" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_userExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:userExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_firstText_InputMessage">
+    <wsdl:part name="parameters" element="tns:firstText" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_firstText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:firstTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_firstTextID_InputMessage">
+    <wsdl:part name="parameters" element="tns:firstTextID" />
+  </wsdl:message>
+  <wsdl:message name="IwcfService_firstTextID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:firstTextIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwcfService">
+    <wsdl:operation name="DBis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/DBis" message="tns:IwcfService_DBis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/DBisResponse" message="tns:IwcfService_DBis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addNewUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/addNewUser" message="tns:IwcfService_addNewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/addNewUserResponse" message="tns:IwcfService_addNewUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/getUserId" message="tns:IwcfService_getUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/getUserIdResponse" message="tns:IwcfService_getUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addNewText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/addNewText" message="tns:IwcfService_addNewText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/addNewTextResponse" message="tns:IwcfService_addNewText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTexts">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/getTexts" message="tns:IwcfService_getTexts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/getTextsResponse" message="tns:IwcfService_getTexts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/updateText" message="tns:IwcfService_updateText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/updateTextResponse" message="tns:IwcfService_updateText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="userExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/userExist" message="tns:IwcfService_userExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/userExistResponse" message="tns:IwcfService_userExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="firstText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/firstText" message="tns:IwcfService_firstText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/firstTextResponse" message="tns:IwcfService_firstText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="firstTextID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfService/firstTextID" message="tns:IwcfService_firstTextID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfService/firstTextIDResponse" message="tns:IwcfService_firstTextID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwcfService" type="tns:IwcfService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DBis">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/DBis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNewUser">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/addNewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserId">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/getUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNewText">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/addNewText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTexts">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/getTexts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateText">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/updateText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userExist">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/userExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="firstText">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/firstText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="firstTextID">
+      <soap:operation soapAction="http://tempuri.org/IwcfService/firstTextID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wcfService">
+    <wsdl:port name="BasicHttpBinding_IwcfService" binding="tns:BasicHttpBinding_IwcfService">
+      <soap:address location="http://localhost:63646/wcfService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

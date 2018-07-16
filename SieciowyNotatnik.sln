@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor", "z8\Monitor.csproj", "{145D08DC-1ADF-475B-A950-C109078CF6E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libsqlite", "libsqlite\libsqlite.csproj", "{9BFB1EC1-0EF3-416E-A89D-4462ECC117AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcfServiceApp", "wcfServiceApp\wcfServiceApp.csproj", "{B7C9262F-F748-440B-B036-1AEA5A99B5F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SieciowyNotatnik", "z7WinForms\SieciowyNotatnik.csproj", "{8C7054DD-46D6-4D28-9F77-6E86D98C8074}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7C9262F-F748-440B-B036-1AEA5A99B5F1} = {B7C9262F-F748-440B-B036-1AEA5A99B5F1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145D08DC-1ADF-475B-A950-C109078CF6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145D08DC-1ADF-475B-A950-C109078CF6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145D08DC-1ADF-475B-A950-C109078CF6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145D08DC-1ADF-475B-A950-C109078CF6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BFB1EC1-0EF3-416E-A89D-4462ECC117AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFB1EC1-0EF3-416E-A89D-4462ECC117AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFB1EC1-0EF3-416E-A89D-4462ECC117AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFB1EC1-0EF3-416E-A89D-4462ECC117AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C9262F-F748-440B-B036-1AEA5A99B5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C9262F-F748-440B-B036-1AEA5A99B5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C9262F-F748-440B-B036-1AEA5A99B5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C9262F-F748-440B-B036-1AEA5A99B5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7054DD-46D6-4D28-9F77-6E86D98C8074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7054DD-46D6-4D28-9F77-6E86D98C8074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7054DD-46D6-4D28-9F77-6E86D98C8074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7054DD-46D6-4D28-9F77-6E86D98C8074}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67B3F130-47E1-4CDE-AD0E-71BDAC31CDCC}
+	EndGlobalSection
+EndGlobal
